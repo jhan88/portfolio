@@ -34,18 +34,28 @@
   </head>
   <body>
     <!-- Header -->
-    <header>
-      <div name="logo">
-        <img src="images/favicon.ico" alt="logo" />
-        <h1><a href="#">Jiyeon</a></h1>
+    <header class="header">
+      <div name="logo" class="header__logo">
+        <img class="header__logo__image" src="images/favicon.ico" alt="logo" />
+        <h1 class="header__logo__title"><a href="#">Jiyeon</a></h1>
       </div>
       <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#web-dev">Web Developemnt</a></li>
-          <li><a href="#calligraphy">Calligraphy</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <ul class="header__menu">
+          <li><a class="header__menu__item active" href="#home">Home</a></li>
+          <li><a class="header__menu__item active" href="#about">About</a></li>
+          <li>
+            <a class="header__menu__item active" href="#web-dev"
+              >Web Developemnt</a
+            >
+          </li>
+          <li>
+            <a class="header__menu__item active" href="#calligraphy"
+              >Calligraphy</a
+            >
+          </li>
+          <li>
+            <a class="header__menu__item active" href="#contact">Contact</a>
+          </li>
         </ul>
       </nav>
     </header>
