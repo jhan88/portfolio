@@ -99,3 +99,55 @@ button:focus {
   border-radius: 4px;
   color: var(--color-accent);
 }
+
+/* Home */
+#home {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  padding: 5rem 1rem;
+  padding-top: 7rem;
+  text-align: center;
+}
+
+.home__profile {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border: 3px solid var(--color-accent);
+  border-radius: 100%;
+}
+
+.home__title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.home__title--strong {
+  color: var(--color-accent);
+}
+
+.home__description {
+  font-size: 1.3rem;
+}
+
+.home__contact {
+  background-color: var(--color-accent);
+  border-radius: 4px;
+  margin: 2rem;
+}
+
+.home__contact--strong {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+.home__contact:hover {
+  background-color: transparent;
+  outline: 1px solid var(--color-accent);
+}
+
+.home__contact:hover .home__contact--strong {
+  color: var(--color-accent);
+}
