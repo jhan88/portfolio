@@ -13,6 +13,9 @@
   --color-blue: #03e8f9;
   --color-orange: #fd6413;
   --color-gray: #1b1e26;
+
+  /* Size */
+  --size-max-width: 1200px;
 }
 
 * {
@@ -67,6 +70,13 @@ button:focus {
 .section__description {
   font-size: 1.5rem;
   margin: 0.5rem 0;
+}
+
+.max-container {
+  max-width: var(--size-max-width);
+  margin: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 /* Header */
@@ -166,4 +176,60 @@ button:focus {
 
 .home__contact:hover .home__contact--strong {
   color: var(--color-accent);
+}
+
+/* About */
+.work {
+  display: flex;
+  gap: 1rem;
+  margin: 2.5rem 0;
+}
+
+.work__item {
+  background-color: var(--color-primary-variant);
+  width: 25%;
+  border-radius: 4px;
+  padding: 2rem 1rem;
+  color: var(--color-text);
+  cursor: default;
+  box-shadow: 0.1rem 0.1rem 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
+}
+
+.work__icon {
+  font-size: 3rem;
+  margin: 1rem 0;
+  color: var(--color-accent);
+  transition: all 300ms ease;
+}
+
+.work__title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.work__item:hover .work__icon {
+  transform: scale(1.2) rotate(-10deg);
+}
+
+.education__item {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.education__logo {
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
+  margin: 0 1rem;
+}
+
+.education__degree {
+  color: var(--color-primary);
+}
+
+.education__school {
+  color: var(--color-primary);
+  font-size: 0.8rem;
 }
