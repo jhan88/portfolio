@@ -233,3 +233,41 @@ button:focus {
   color: var(--color-primary);
   font-size: 0.8rem;
 }
+
+/* Web Development */
+#web-dev {
+  background-color: var(--color-primary-variant);
+  color: var(--color-text);
+}
+.web-dev__grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto;
+  margin: 2rem 0;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.3);
+}
+
+.web-dev__skills {
+  background-color: var(--color-primary);
+  backdrop-filter: brightness(2);
+  padding: 1rem;
+}
+
+.web-dev__tools {
+  padding: 1rem;
+}
+
+.web-dev__projects {
+  grid-column: span 2;
+  background-color: var(--color-primary);
+  padding: 1rem;
+}
+
+.web-dev__title {
+  color: var(--color-accent);
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
