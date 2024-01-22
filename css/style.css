@@ -271,3 +271,20 @@ button:focus {
   font-weight: bold;
   margin: 1rem 0;
 }
+
+.coding-skills {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  margin-bottom: 1rem;
+}
+
+.coding-skills__item {
+  max-width: 200px;
+}
+
+.coding-skills__title {
+  color: var(--color-accent);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
