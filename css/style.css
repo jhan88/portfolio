@@ -340,3 +340,62 @@ button:focus {
   width: 50px;
   height: 2px;
 }
+
+/* Calligraphy */
+.calligraphy__title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.categories__list {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+  gap: 1rem;
+}
+
+.category {
+  position: relative;
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  border-radius: 4px;
+  padding: 0.5rem 3rem;
+  opacity: 0.3;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+.category--selected {
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+  opacity: 1;
+}
+
+.category__count {
+  position: absolute;
+  top: 0.25rem;
+  right: 1rem;
+  background-color: var(--color-accent-variant);
+  filter: brightness(1.5);
+  width: 1.5rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  border-radius: 100%;
+  color: var(--color-text);
+  opacity: 0;
+  transition: all 200ms ease;
+}
+
+.category:hover {
+  background-color: transparent;
+  outline: 1px solid var(--color-accent);
+  color: var(--color-primary);
+  opacity: 0.8;
+}
+
+.category:hover .category__count,
+.category--selected .category__count {
+  opacity: 1;
+}
