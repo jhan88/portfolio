@@ -16,6 +16,9 @@
 
   /* Size */
   --size-max-width: 1200px;
+
+  /* Scroll */
+  scroll-behavior: smooth;
 }
 
 * {
@@ -466,4 +469,48 @@ button:focus {
   background-color: var(--color-accent);
   width: 50px;
   height: 2px;
+}
+
+/* Arrow Up */
+.arrow-up {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  background-color: var(--color-primary);
+  box-shadow: var(--color-accent) 0px 6px 4px;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.arrow-up__link {
+  transition: all 200ms ease-in;
+}
+
+.arrow-up__link:hover {
+  color: var(--color-accent);
+}
+
+/* Footer */
+#contact {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+}
+
+.contact__links__list {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.contact__link {
+  transition: color 200ms ease;
+}
+
+.contact__link:hover {
+  color: var(--color-accent);
 }
