@@ -7,3 +7,11 @@ document.addEventListener('scroll', () => {
     ? header.classList.add('header--primary')
     : header.classList.remove('header--primary');
 });
+
+// Fade out Home depending on the position relative to the viewport
+const home = document.querySelector('.home__container');
+const homeHeight = home.offsetHeight;
+
+document.addEventListener('scroll', () => {
+  home.style.opacity = 1 - window.scrollY / homeHeight;
+});
