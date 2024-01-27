@@ -24,3 +24,20 @@ document.addEventListener('scroll', () => {
     ? arrowUp.classList.add('arrow-up--visible')
     : arrowUp.classList.remove('arrow-up--visible');
 });
+
+// Implement a toggle menu bar for the mobile environment
+const menuToggle = document.querySelector('.header__toggle');
+const menu = document.querySelector('.header__menu');
+
+menuToggle.addEventListener('click', () => {
+  menu.classList.toggle('open');
+});
+
+// Close the menu bar when clicked
+const menuItemList = document.querySelectorAll('.header__menu__item');
+
+menuItemList.forEach((item) => {
+  item.addEventListener('click', () => {
+    menu.classList.remove('open');
+  });
+});

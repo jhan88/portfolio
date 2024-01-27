@@ -116,13 +116,19 @@ button:focus {
   font-size: 1.8rem;
 }
 
+.header__toggle {
+  display: none;
+}
+
 .header__menu {
   display: flex;
   gap: 4px;
 }
 
 .header__menu__item {
+  display: block;
   padding: 8px 16px;
+  border-bottom: 1px solid transparent;
 }
 
 .header__menu__item:hover {
@@ -551,11 +557,31 @@ button:focus {
     width: 100%;
   }
 
+  .header__toggle {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5rem;
+    color: var(--color-text);
+    font-size: 1.5rem;
+  }
+
   .header__menu {
-    flex-direction: column;
-    align-items: center;
+    display: none;
+    background-color: var(--color-primary);
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
     padding: 1rem;
     gap: 1.5rem;
+  }
+
+  .header__menu.open {
+    display: grid;
+  }
+
+  .header__menu__item {
+    text-align: center;
   }
 
   /* Home */
