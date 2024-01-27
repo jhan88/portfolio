@@ -15,3 +15,12 @@ const homeHeight = home.offsetHeight;
 document.addEventListener('scroll', () => {
   home.style.opacity = 1 - window.scrollY / homeHeight;
 });
+
+// Make arrow-up visible only when the webpage is scrolled down more than 50% of Home
+const arrowUp = document.querySelector('.arrow-up');
+
+document.addEventListener('scroll', () => {
+  window.scrollY > 0.5 * homeHeight
+    ? arrowUp.classList.add('arrow-up--visible')
+    : arrowUp.classList.remove('arrow-up--visible');
+});

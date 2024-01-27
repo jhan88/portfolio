@@ -489,6 +489,12 @@ button:focus {
   border-radius: 100%;
   text-align: center;
   font-size: 3rem;
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+.arrow-up--visible {
+  opacity: 1;
 }
 
 .arrow-up__link {
@@ -621,6 +627,5 @@ button:focus {
     width: 3rem;
     height: 3rem;
     font-size: 2rem;
-    opacity: 0.5;
   }
 }
