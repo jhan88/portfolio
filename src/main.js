@@ -1,3 +1,5 @@
+'use strict';
+
 // Apply primary background color to Header when the webpage is scrolled down
 const header = document.querySelector('.header');
 const headerHeight = header.offsetHeight;
