@@ -442,6 +442,15 @@ button:focus {
   border-radius: 4px;
   overflow: hidden;
   flex-shrink: 0;
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 200ms ease;
+}
+
+.calligraphy__projects__item.slide-out {
+  opacity: 0.7;
+  transform: translateX(1rem);
+  transition: all 0s;
 }
 
 .calligraphy__project__image {
