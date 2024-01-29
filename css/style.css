@@ -129,6 +129,7 @@ button:focus {
   display: block;
   padding: 8px 16px;
   border-bottom: 1px solid transparent;
+  transition: all 200ms ease;
 }
 
 .header__menu__item:hover {
@@ -136,7 +137,7 @@ button:focus {
 }
 
 .header__menu__item.active {
-  border: 1px solid var(--color-accent);
+  outline: 1px solid var(--color-accent);
   border-radius: 4px;
   color: var(--color-accent);
 }
