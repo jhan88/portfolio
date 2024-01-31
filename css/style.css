@@ -19,6 +19,10 @@
 
   /* Scroll */
   scroll-behavior: smooth;
+
+  /* Divider */
+  --divider-bottom-triangle: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" > <path d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z" ></path> </svg>');
+  --divider-top-arrow: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" >  <path d="M649.97 0L550.03 0 599.91 54.12 649.97 0z" class="shape-fill"></path> </svg>');
 }
 
 * {
@@ -144,6 +148,7 @@ button:focus {
 
 /* Home */
 #home {
+  position: relative;
   background-color: var(--color-primary);
   color: var(--color-text);
   padding: 5rem 1rem;
@@ -192,6 +197,21 @@ button:focus {
 
 .home__contact:hover .home__contact--strong {
   color: var(--color-accent);
+}
+
+/* Home Divider-Bottom */
+#home:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  overflow: hidden;
+  line-height: 0;
+  background-color: #ffffff;
+  mask: var(--divider-bottom-triangle);
+  -webkit-mask: var(--divider-bottom-triangle);
 }
 
 /* About */
@@ -523,8 +543,24 @@ button:focus {
 
 /* Footer */
 #contact {
+  position: relative;
   background-color: var(--color-primary);
   color: var(--color-text);
+}
+
+/* Contact Divider-Top */
+#contact:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  overflow: hidden;
+  line-height: 0;
+  background-color: #ffffff;
+  mask: var(--divider-top-arrow);
+  -webkit-mask: var(--divider-top-arrow);
 }
 
 .contact__links__list {
