@@ -30,12 +30,15 @@
       src="https://kit.fontawesome.com/00de1c7b09.js"
       crossorigin="anonymous"
     ></script>
+    <!-- TypeIt -->
+    <script src="https://unpkg.com/typeit@8.0.1/dist/index.umd.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- JavaScript -->
     <script type="module" src="src/main.js" defer></script>
     <script type="module" src="src/calligraphyProjects.js" defer></script>
     <script type="module" src="src/activeMenu.js" defer></script>
+    <script type="module" src="src/type.js" defer></script>
   </head>
   <body>
     <!-- Header -->
@@ -80,7 +83,10 @@
           <h2 class="home__title">
             Hello I am <strong class="home__title--strong">Jiyeon</strong>
           </h2>
-          <p class="home__description">
+          <p
+            class="home__description"
+            aria-label="a web developer, a calligrapher and a life explorer!"
+          >
             a web developer, a calligrapher &#38; a life explorer!
           </p>
           <button class="home__contact">
