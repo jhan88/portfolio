@@ -710,3 +710,14 @@ button:focus {
     font-size: 2rem;
   }
 }
+
+@media screen and (max-width: 599px) {
+  /* Web-Development */
+  .web-dev__projects__list {
+    grid-template-columns: 1fr;
+  }
+
+  .web-dev__project__image {
+    max-width: 300px;
+  }
+}
